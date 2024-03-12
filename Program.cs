@@ -8,10 +8,15 @@ class Hello1
     {
         Intro1 obj = new Intro1();
         obj.Introduction();
-        Console.ReadKey();
+       
 
-        Program1 obj1 = new Program1();
-        obj1.BoxingAndUnboxing();   
+        NonGenericCollectionWithBoxing nonGenericCollectionWithBoxing = new NonGenericCollectionWithBoxing();
+        nonGenericCollectionWithBoxing.action();
+
+        GenericCollectionToAvoidBoxing GenericCollectionToAvoidBoxing = new GenericCollectionToAvoidBoxing();
+        GenericCollectionToAvoidBoxing.action2();
+
+        Console.ReadKey();
 
     }
 }
